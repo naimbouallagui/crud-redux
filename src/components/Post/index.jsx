@@ -1,12 +1,11 @@
 import React from "react";
 
-const Post = ({ post }) => {
+const Post = ({ post,del, upd }) => {
   return (
     <div style={{display: 'flex', justifyContent: 'space-between', flex: 'wrap' }}>
-      <p>hello world</p>
       <p>{post.title}</p>
-      <button style={{background: 'yellow' }}>update</button>
-      <button style={{background: 'red'}}>delete</button>
+      <button style={{background: 'yellow' }} onClick={upd}>update</button>
+      <button style={{background: 'red'}} onClick={del}>delete</button>
     </div>
   );
 };
