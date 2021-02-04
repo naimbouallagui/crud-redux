@@ -12,7 +12,7 @@ const postReducer = (state = initialState, action) => {
       return { ...state, allPosts: action.payload, success: true };
 
     case PostActionTypes.LIST_POSTS_FAILURE:
-      return { ...state, success: false, failure: true };
+      return { ...state, success: false, failure: true};
 
     default:
       return state;
